@@ -2,27 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>femboys.love</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <title>Paint.NET Clone</title>
 </head>
 <body>
-  <div class="container">
-    <div class="window">
-      <div class="title-bar">
-        <div class="buttons">
-          <div class="close"></div>
-        </div>
-        <div class="title">femboys.love</div>
-      </div>
-      <div class="content">
-        <div class="icon">
-          <i class="fas fa-user"></i>
-        </div>
-        <h1>Hi, I'm Brook</h1>
-        <p>I got this domain from Luke and I don't really know what to do with it, so enjoy this. This is the most basic HTML website money can buy so there isn't really anything TO enjoy but eh.</p>
-      </div>
+  <div class="window">
+    <div class="title-bar">
+      <div class="title">Paint</div>
+    </div>
+    <div class="canvas-container">
+      <canvas id="paintCanvas" width="800" height="600"></canvas>
+    </div>
+    <div class="toolbox">
+      <input type="range" id="brushSizeSlider" min="1" max="20" value="5">
+      <input type="color" id="brushColorPicker" value="#000000">
+      <button id="clearCanvasBtn">Clear</button>
+      <button id="twitterBtn">Visit Twitter Profile</button>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 </html>
